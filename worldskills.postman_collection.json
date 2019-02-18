@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "e6714e5e-cbad-4af0-879f-aea690c319f0",
+		"name": "worldskills",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/api/auth?login=admin&password=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/api/auth?login=admin&password=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "t123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/api/posts?title=Some food&anons=Some anons&text=Some text&tags=Some tage&image=Image data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Some food"
+						},
+						{
+							"key": "anons",
+							"value": "Some anons"
+						},
+						{
+							"key": "text",
+							"value": "Some text"
+						},
+						{
+							"key": "tags",
+							"value": "Some tage"
+						},
+						{
+							"key": "image",
+							"value": "Image data"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posts (GET)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "t123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/api/posts?title=Some food&anons=Some anons&text=Some text&tags=Some tage&image=Image data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Some food"
+						},
+						{
+							"key": "anons",
+							"value": "Some anons"
+						},
+						{
+							"key": "text",
+							"value": "Some text"
+						},
+						{
+							"key": "tags",
+							"value": "Some tage"
+						},
+						{
+							"key": "image",
+							"value": "Image data"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "t123456",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/api/posts?title=Some food&anons=Some anons&text=Some text&tags=Some tage&image=Image data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Some food"
+						},
+						{
+							"key": "anons",
+							"value": "Some anons"
+						},
+						{
+							"key": "text",
+							"value": "Some text"
+						},
+						{
+							"key": "tags",
+							"value": "Some tage"
+						},
+						{
+							"key": "image",
+							"value": "Image data"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
